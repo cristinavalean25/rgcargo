@@ -1,0 +1,49 @@
+.container-template-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.template-services {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  justify-content: center;
+  margin-left: 1%;
+}
+
+.line {
+  border: 1px solid #eaebec;
+  margin: 5px;
+}
+
+.title-template {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #777677;
+}
+
+.text-template {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #777677;
+}
+
+.separator-span {
+  width: 200px;
+  height: 3px;
+  background-color: #e80a08;
+  margin-bottom: 10px;
+}
+
+.template-services-content {
+  flex-grow: 1;
+}
+
+.custom-btn {
+  color: #fff; /* Culoarea textului */
+  border-radius: 0; /* Border-radius */
+}
