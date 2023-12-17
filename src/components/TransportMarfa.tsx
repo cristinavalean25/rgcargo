@@ -1,8 +1,8 @@
 import { FormattedMessage } from "react-intl";
-import "../index.css";
+import "../CssPages/TransportMarfa.css";
 import TopNavbar from "./TopNavbar";
 import Navbar from "./Navbar";
-import ImgTruck from "../Images/black-truck-1.jpg";
+import ImgTruck from "../Images/cargoTruck.png";
 import Footer from "./Footer";
 
 interface TransportProps {
@@ -18,9 +18,6 @@ const TransportMarfa: React.FC<TransportProps> = ({
     <>
       <TopNavbar />
       <Navbar changeLanguage={changeLanguage} locale={locale} />
-      <div>
-        <img src={ImgTruck} alt="Truck" className="img-fluid img-transport" />
-      </div>
       <div className="container-fluid container-details">
         <div className="row">
           <div className="col-md-6">

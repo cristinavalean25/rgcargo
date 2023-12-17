@@ -213,59 +213,6 @@ nav ul {
   color: #fff;
 }
 
-/* TransportMarfa */
-
-.img-transport {
-  width: 100%;
-  height: 65vh;
-}
-
-.container-details {
-  padding: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.text-transport {
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-}
-
-.text-transport h2 {
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: #7b8693;
-}
-
-.text-transport h2 {
-  opacity: 0;
-  animation: fadeIn 5s ease-in-out forwards;
-}
-
-.transport-paragraph {
-  font-size: 17px;
-  line-height: 1.5;
-  text-align: justify;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  to {
-    transform: translateX(0);
-  }
-}
-
 /* SERVICES */
 
 .services {
@@ -275,123 +222,6 @@ nav ul {
   width: 100%;
   height: auto;
 }
-
-/* FOOTER */
-
-.footer-container {
-  width: 100%;
-  height: auto;
-  margin-top: 5%;
-}
-
-.bg-image-footer {
-  width: 100%;
-  height: 270px;
-  background-color: #091f30;
-}
-
-.overlay-div {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  color: white;
-  overflow-x: hidden;
-}
-
-.footer-container-div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1%;
-}
-
-.details-footer {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.details-footer img {
-  display: inline-block;
-}
-
-.footer-image {
-  margin: 2%;
-  border: 10px solid #fff;
-}
-
-.location-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-container {
-  position: relative;
-  height: auto;
-}
-
-.image-container-footer {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 5%;
-}
-
-.img-footer {
-  width: 170px;
-  height: 140px;
-  margin: 5%;
-  border: 10px solid #fff;
-}
-
-.footer-subdiv {
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
-  width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.subdivision {
-  flex: 1;
-  text-align: center;
-  margin-top: 0px;
-  height: 100%;
-  overflow: hidden;
-}
-
-.subdivision-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  overflow: hidden;
-}
-
-.footer-details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.adrress-footer {
-  text-align: left;
-  margin-left: 1%;
-}
-
 .line-footer {
   width: 100%;
   border: 1px solid #7b8693;
@@ -461,51 +291,6 @@ nav ul {
   font-weight: 600;
 }
 
-/* ANIMALS TRANSPORT */
-
-.img-container {
-  position: relative;
-}
-
-.overlay-text-animals {
-  position: absolute;
-  top: 50%;
-  right: 15%;
-  transform: translateY(-50%);
-  padding: 20px;
-  color: #fff;
-}
-
-.container-box {
-  width: 85%;
-  margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-}
-
-.container-box-details {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 2px;
-  text-align: center;
-  height: auto;
-}
-
-.container-content {
-  height: 100%;
-}
-
-.contact a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #fff;
-}
-
 @media screen and (max-width: 680px) {
   .top-navbar {
     display: none;
@@ -527,34 +312,6 @@ nav ul {
   .contact-form {
     width: 100%;
     margin-left: 0;
-  }
-
-  .bg-image-footer {
-    height: 230px;
-  }
-
-  .footer-container-div {
-    flex-direction: row;
-    align-items: center;
-    height: auto;
-  }
-
-  .details-footer {
-    width: 100%;
-    text-align: center;
-  }
-
-  .location-footer {
-    flex-direction: column;
-  }
-
-  .footer-image {
-    width: 120px;
-    height: 90px;
-  }
-
-  .footer-container {
-    margin-top: 10%;
   }
 }
 

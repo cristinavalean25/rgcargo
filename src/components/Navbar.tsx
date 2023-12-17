@@ -45,11 +45,6 @@ const Navbar: React.FC<NavbarProps> = ({ changeLanguage, locale }) => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/AboutUs" className="nav-link">
-                  <FormattedMessage id="navbar.about" />
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link to="/Services" className="nav-link">
                   <FormattedMessage id="navbar.services" />
                 </Link>
@@ -60,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ changeLanguage, locale }) => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/crypto-pay" className="nav-link">
+                <Link to="/CryptoPay" className="nav-link">
                   <FormattedMessage id="navbar.Crypto" />
                 </Link>
               </li>

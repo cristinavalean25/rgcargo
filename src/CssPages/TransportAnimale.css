@@ -1,0 +1,47 @@
+.img-container {
+  position: relative;
+}
+
+.overlay-text-animals {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  padding: 20px;
+  color: #fff;
+}
+
+.container-box {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  align-items: center;
+}
+
+.container-box-details {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 2px;
+  text-align: center;
+  height: auto;
+}
+
+.container-content {
+  height: 100%;
+}
+
+.img-transport {
+  height: 50vh;
+}
+
+.contact a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}

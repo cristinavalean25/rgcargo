@@ -1,22 +1,21 @@
-import { FormattedMessage } from "react-intl";
-import "../CssPages/Services.css";
-import img1 from "../Images/truck-3.jpg";
-import img2 from "../Images/truck-4.jpg";
-import img3 from "../Images/truck-2.png";
-import img4 from "../Images/truck-3.jpg";
+import "../CssPages/CryptoPay.css";
+import Img1 from "../Images/services.jpg";
+import Img2 from "../Images/truck.jpg";
+import Img3 from "../Images/truck-3.jpg";
 import { Carousel } from "react-bootstrap";
-import { motion } from "framer-motion";
 import { useState } from "react";
-import Footer from "./Footer";
+import { motion } from "framer-motion";
+import { FormattedMessage } from "react-intl";
 import TopNavbar from "./TopNavbar";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
-interface ServiceProps {
+interface CryptoProps {
   changeLanguage: (newLocale: string) => void;
   locale: string;
 }
 
-const Services: React.FC<ServiceProps> = ({ changeLanguage, locale }) => {
+const CryptoPay: React.FC<CryptoProps> = ({ changeLanguage, locale }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleSlideChange = (index: number) => {
@@ -26,28 +25,24 @@ const Services: React.FC<ServiceProps> = ({ changeLanguage, locale }) => {
   const images = [
     {
       id: 1,
-      imgSrc: img1,
+      imgSrc: Img1,
     },
     {
       id: 2,
-      imgSrc: img2,
+      imgSrc: Img2,
     },
     {
       id: 3,
-      imgSrc: img3,
-    },
-    {
-      id: 4,
-      imgSrc: img4,
+      imgSrc: Img3,
     },
   ];
+
   return (
     <>
       <TopNavbar />
       <Navbar changeLanguage={changeLanguage} locale={locale} />
-
       <Carousel
-        interval={2000}
+        interval={5000}
         style={{ paddingBottom: "2%" }}
         controls={false}
         indicators={false}
@@ -89,7 +84,9 @@ const Services: React.FC<ServiceProps> = ({ changeLanguage, locale }) => {
         <div className="template-services">
           <span className="separator-span"></span>
           <div className="template-services-content">
-            <h2 className="title-template">Our Services</h2>
+            <h2 className="title-template">
+              <FormattedMessage id="crypto.title" />
+            </h2>
             <h4 className="text-template">The focus of our company is on:</h4>
 
             <ul className="bullet-list">
@@ -109,19 +106,16 @@ const Services: React.FC<ServiceProps> = ({ changeLanguage, locale }) => {
             </ul>
 
             <p className="text-details">
-              <FormattedMessage id="template.descriere" />
+              <FormattedMessage id="crypto.description" />
             </p>
             <p className="text-details">
-              <FormattedMessage id="template.descriere1" />
+              <FormattedMessage id="crypto.description.1" />
             </p>
             <p className="text-details">
-              <FormattedMessage id="template.descriere2" />
+              <FormattedMessage id="crypto.description.2" />
             </p>
             <p className="text-details">
-              <FormattedMessage id="template.descriere3" />
-            </p>
-            <p className="text-details">
-              <FormattedMessage id="template.descriere4" />
+              <FormattedMessage id="crypto.description.3" />
             </p>
           </div>
         </div>
@@ -131,4 +125,4 @@ const Services: React.FC<ServiceProps> = ({ changeLanguage, locale }) => {
   );
 };
 
-export default Services;
+export default CryptoPay;

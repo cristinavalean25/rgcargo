@@ -9,6 +9,16 @@ interface ContactProps {
 }
 
 const Contact: React.FC<ContactProps> = ({ changeLanguage, locale }) => {
+  const workingHours = [
+    { day: "Mon", hours: "09:00 - 18:00" },
+    { day: "Tue", hours: "09:00 - 18:00" },
+    { day: "Wed", hours: "09:00 - 18:00" },
+    { day: "Thu", hours: "09:00 - 18:00" },
+    { day: "Fri", hours: "09:00 - 18:00" },
+    { day: "Sat", hours: "Closed", bold: true },
+    { day: "Sun", hours: "Closed", bold: true },
+  ];
+
   return (
     <>
       <TopNavbar />
@@ -64,19 +74,21 @@ const Contact: React.FC<ContactProps> = ({ changeLanguage, locale }) => {
             </div>
 
             {/* Partea dreaptă */}
-            <div className="col-md-6">
-              <h2>Rg-Cargo</h2>
-              <p>
+            <div className="col-md-6 ">
+              <h2 className="title-programs">Rg-Cargo</h2>
+              <p className="workingHours">
                 We love our customers, so feel free to visit during normal
                 business hours.
               </p>
-              <p>Mon: 09:00 - 18:00</p>
-              <p>Tue: 09:00 - 18:00</p>
-              <p>Wed: 09:00 - 18:00</p>
-              <p>Thu: 09:00 - 18:00</p>
-              <p>Fri: 09:00 - 18:00</p>
-              <p>Sat: Closed</p>
-              <p>Sun: Closed</p>
+              {workingHours.map((item, index) => (
+                <p
+                  key={index}
+                  style={{ fontWeight: item.bold ? "bold" : "normal" }}
+                  className="workingHours"
+                >
+                  {item.day}: {item.hours}
+                </p>
+              ))}
             </div>
           </div>
         </div>

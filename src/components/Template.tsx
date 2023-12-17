@@ -15,6 +15,7 @@ function Template() {
   const handleSlideChange = (index: number) => {
     setCurrentSlide(index);
   };
+
   const images = [
     {
       id: 1,

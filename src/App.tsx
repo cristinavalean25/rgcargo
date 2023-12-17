@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import AboutUs from "./components/AboutUs";
 import TransportMarfa from "./components/TransportMarfa";
 import TransportAnimale from "./components/TransportAnimale";
 import TransportFrigorific from "./components/TransportFrigorific";
@@ -8,6 +7,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import TransportMasini from "./components/TransportMasini";
+import CryptoPay from "./components/CryptoPay";
 
 interface AppProps {
   changeLanguage: (newLocale: string) => void;
@@ -20,10 +20,6 @@ const App: React.FC<AppProps> = ({ changeLanguage, locale }) => {
       <Route
         path="/"
         element={<Home changeLanguage={changeLanguage} locale={locale} />}
-      />
-      <Route
-        path="/AboutUs"
-        element={<AboutUs changeLanguage={changeLanguage} locale={locale} />}
       />
       <Route
         path="/About"
@@ -69,6 +65,10 @@ const App: React.FC<AppProps> = ({ changeLanguage, locale }) => {
         element={
           <TransportMasini changeLanguage={changeLanguage} locale={locale} />
         }
+      />
+      <Route
+        path="/CryptoPay"
+        element={<CryptoPay changeLanguage={changeLanguage} locale={locale} />}
       />
     </Routes>
   );
