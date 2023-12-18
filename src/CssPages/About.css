@@ -1,4 +1,4 @@
-.container-100 {
+.container-about {
   width: 100%;
   height: auto;
 }
@@ -68,4 +68,10 @@
   text-align: justify;
   padding: 2px;
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .rectangle {
+    flex: 0 0 100%;
+  }
 }

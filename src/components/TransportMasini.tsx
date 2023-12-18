@@ -28,7 +28,7 @@ const TransportMasini: React.FC<TransportProps> = ({
               <FormattedMessage id="transport.masini.title" />
               <p style={{ marginTop: "10px" }}>
                 {" "}
-                <FormattedMessage id="transport.frigo.sub" />
+                {/* <FormattedMessage id="transport.frigo.sub" /> */}
               </p>
             </h2>
 

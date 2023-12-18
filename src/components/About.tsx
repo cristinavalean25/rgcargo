@@ -13,7 +13,7 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = ({}) => {
   return (
-    <div className="container-100">
+    <div className="container-about">
       <div className="container-75">
         <span className="separator-span"></span>
         <h2 className="about-title">

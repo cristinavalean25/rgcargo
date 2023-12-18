@@ -1,7 +1,7 @@
 import About from "./About";
 import Footer from "./Footer";
 import ImagesFirstPage from "./ImagesFirstPage";
-import Navbar from "./Navbar";
+import CustomNavbar from "./Navbar";
 import Template from "./Template";
 import TopNavbar from "./TopNavbar";
 
@@ -14,7 +14,7 @@ const Home: React.FC<HomeProps> = ({ changeLanguage, locale }) => {
   return (
     <div className="App">
       <TopNavbar />
-      <Navbar changeLanguage={changeLanguage} locale={locale} />
+      <CustomNavbar changeLanguage={changeLanguage} locale={locale} />
       <Template />
       <About changeLanguage={changeLanguage} locale={locale} />
       <ImagesFirstPage changeLanguage={changeLanguage} locale={locale} />
